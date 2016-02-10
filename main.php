@@ -1,2 +1,2 @@
 <?php
-    echo 'Hello Jumbo!';
+    echo 'Hello world!';
