@@ -4,10 +4,12 @@ runtime: php55
 api_version: 1
 threadsafe: yes
 
-handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
-
+handlers: 
+- url: /public/favicon\.ico
+  static_files: /public/favicon.ico
+  upload: /public/favicon\.ico
+  
 - url: .*
-  script: main.php
+  script: /public/index.php
+  
+
