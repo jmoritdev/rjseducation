@@ -9,6 +9,9 @@ handlers:
   static_files: /public/favicon.ico
   upload: /public/favicon\.ico
   
+- url: /mathassignment\.php
+  script: public/mathassignment.php
+  
 - url: .*
   script: /public/index.php
   

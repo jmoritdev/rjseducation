@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 <?php
 session_start();
  
@@ -35,6 +38,7 @@ if (isset($_POST['username'])) {
 	}
 	
 }
+//>>>>>>> refs/remotes/origin/rjseducationRobin
 ?>
 <!DOCTYPE html>
 <html>
