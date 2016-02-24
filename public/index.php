@@ -1,22 +1,19 @@
-<<<<<<< HEAD
-
-=======
 <?php
 session_start();
  
 if (isset($_POST['username'])) {
         
-        // Include the databas connection script
+     // Include the databas connection script
 	include_once("dbConnect.php");
 	
 	// Set the posted data from the form into local variables
-        $usname = strip_tags($_POST['username']);
+    $usname = strip_tags($_POST['username']);
 	$paswd = strip_tags($_POST['password']);
 	
 	$usname = mysqli_real_escape_string($dbCon, $usname);
 	$paswd = mysqli_real_escape_string($dbCon, $paswd);
 	
-	$paswd = md5($paswd); // using md5 just for testing purposes
+	$paswd = md5($paswd); // m5 encryptie
 	
 	$sql = "SELECT id, username, password FROM members WHERE username = '$usname' AND activated = '1' LIMIT 1";
 	$query = mysqli_query($dbCon, $sql);
@@ -31,14 +28,12 @@ if (isset($_POST['username'])) {
 		$_SESSION['username'] = $usname;
 		$_SESSION['id'] = $uid;
 		// Now direct to users feed
-		header("Location: user.php");
+		header("Location: mathassignment.php");
 	} else {
-		echo "<h2>Oops that username or password combination was incorrect.
-		<br /> Please try again.</h2>";
+		echo "<h2>Verkeerde gebruikersnaam of wachtwoord, probeer nogmaals.</h2>";
 	}
 	
 }
-//>>>>>>> refs/remotes/origin/rjseducationRobin
 ?>
 <!DOCTYPE html>
 <html>
@@ -69,10 +64,10 @@ h1 {
  
 <body>
 <div id="wrapper">
-<h1>Basisschool de ooievaar</h1>
+<h1>Basisschool de Ooievaar</h1>
 <form id="form" action="index.php" method="post" enctype="multipart/form-data">
-Username: <input type="text" name="username" /> <br />
-Password: <input type="password" name="password" /> <br />
+Gebruikersnaam: <input type="text" name="username" /> <br />
+Wachtwoord: <input type="password" name="password" /> <br />
 <input type="submit" value="Login" name="Submit" />
 </form>
 </body>
