@@ -5,6 +5,10 @@ api_version: 1
 threadsafe: yes
 
 handlers: 
+    
+- url: /public/bootstrap/css
+  static_dir: css
+    
 - url: /public/favicon\.ico
   static_files: /public/favicon.ico
   upload: /public/favicon\.ico
@@ -12,7 +16,7 @@ handlers:
 - url: /mathassignment\.php
   script: public/mathassignment.php
   
-- url: .*
+- url: //.*
   script: /public/index.php
   
 
