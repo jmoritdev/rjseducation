@@ -5,6 +5,8 @@ $userAnswers = $_POST['answer'];
 $correctAnswers = $_POST['correctAnswer'];
 
 ?>
+<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <form action="mathassignment.php" method="POST">
     <?php
     for ($x = 1; $x < 11; $x++) {
@@ -25,6 +27,6 @@ $correctAnswers = $_POST['correctAnswer'];
         echo "<br>";
     }
     ?>
-    <input type="submit" name="submitButton" value="Lever in"/>
+    <input class="btn btn-danger" type="submit" name="submitButton" value="Lever in"/>
 </form>
 
