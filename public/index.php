@@ -46,8 +46,6 @@ if (isset($_POST['username'])) {
 <html>
 
     <head>
-        <meta charset="UTF-8">
-        <title></title>
         <style type="text/css">
             html {
                 font-family: Verdana, Geneva, sans-serif;

@@ -15,6 +15,9 @@ handlers:
   
 - url: /mathassignment\.php
   script: public/mathassignment.php
+ 
+- url: /layout\.php
+  script: layout.php
   
 - url: .*
   script: /public/index.php
