@@ -18,6 +18,9 @@ handlers:
   
 - url: /mathassignment\.php
   script: public/mathassignment.php
+  
+- url: /dutchassignment\.php
+  script: public/dutchassignment.php
  
 - url: /layout\.php
   script: layout.php

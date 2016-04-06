@@ -10,6 +10,9 @@
             <div>
                 <a class="btn btn-lg btn-info" href="mathassignment.php">Wiskunde <i class="fa fa-percent"></i></a>
             </div>
+            <div>
+                <a class="btn btn-lg btn-info" href="dutchassignment.php">Nederlands</a>
+            </div>
         </div>
     </body>
 </html>

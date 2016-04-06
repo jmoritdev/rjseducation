@@ -21,16 +21,18 @@ if (isset($_POST['username'])) {
     $paswd = md5($paswd); // using md5 just for testing purposes
 
 
-    $sql = "SELECT id, username, password FROM member WHERE username = '$usname'";
+    $sql = "SELECT id, username, password, usertype FROM member WHERE username = '$usname'";
     $query = mysqli_query($dbCon, $sql);
     $row = mysqli_fetch_row($query);
     $uid = $row[0];
     $dbUsname = $row[1];
     $dbPassword = $row[2];
+    $usertype = $row[3];
 
     if ($usname == $dbUsname && $paswd == $dbPassword) {
 
         $_SESSION['username'] = $usname;
+        $_SESSION['usertype'] = $usertype;
         $_SESSION['id'] = $uid;
 
         header("Location: home.php");
