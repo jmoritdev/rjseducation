@@ -1,5 +1,5 @@
 <?php
-$dbCon = mysqli_connect("jmorit.nl", "jmoritnl_rjsedu", "7Xq0zjrZ", "jmoritnl_rjseducation");
+$dbCon = mysqli_connect("localhost:3306", "root", "", "rjseducation");
 
 
 ?>
