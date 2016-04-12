@@ -11,6 +11,9 @@ handlers:
   
 - url: /font-awesome-4.5.0/css
   static_dir: css
+  
+- url: /Assets/images
+  static_dir: images
     
 - url: /public/favicon\.ico
   static_files: /public/favicon.ico
@@ -21,6 +24,9 @@ handlers:
   
 - url: /dutchassignment\.php
   script: public/dutchassignment.php
+  
+- url: /countingassignment\.php
+  script: public/countingassignment.php
  
 - url: /layout\.php
   script: layout.php
