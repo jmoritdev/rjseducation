@@ -33,6 +33,9 @@
                 <li><a href="mathassignment.php">Rekenen</a></li>
                 <li><a href="dutchassignment.php">Taal</a></li>
                 <li><a href="countingassignment.php">Geld tellen</a></li>
+                <?php if($_SESSION["usertype"] == "ADMIN"){ ?>
+                    <li><a href="membernew.php">Nieuwe Gebruiker</a></li>
+                <?php } ?>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">

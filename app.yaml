@@ -27,6 +27,9 @@ handlers:
   
 - url: /countingassignment\.php
   script: public/countingassignment.php
+  
+- url: /membernew\.php
+  script: public/membernew.php
  
 - url: /layout\.php
   script: layout.php
